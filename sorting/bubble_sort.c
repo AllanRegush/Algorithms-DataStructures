@@ -8,7 +8,7 @@ void swap(int *x, int *y) {
     *y = temp;
 }
 
-// Swap the array
+// Sort the array
 void bubble_sort(int arr[], int arrLength) {
     bool isSwapped;
     do {

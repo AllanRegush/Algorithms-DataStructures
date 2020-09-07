@@ -28,7 +28,10 @@ void selection_sort(int arr[], int arrLength) {
                 index = j;
             }
         }
-        swap(&arr[i], &arr[index]);
+        // only swap if lowest(index) is not equal to the current loop index.
+        if (! (i == index)) {
+            swap(&arr[i], &arr[index]);
+        }
     }
 }
 

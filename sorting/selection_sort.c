@@ -23,7 +23,7 @@ void swap(int *x, int *y) {
 void selection_sort(int arr[], int arrLength) {
     for (int i = 0; i < arrLength; ++i) {
         int index = i;
-        for (int j = i; j < arrLength; ++j) {
+        for (int j = i + 1; j < arrLength; ++j) {
             if(arr[j] < arr[index]) {
                 index = j;
             }
